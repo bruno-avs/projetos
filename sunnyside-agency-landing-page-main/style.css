@@ -1,1 +1,311 @@
 @charset "UTF-8";
+/* Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;1,500;1,600&display=swap');
+/* Fraunces */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
+:root {
+    /* fonts */
+    --font1:'Barlow', serif;
+    --font2:'Fraunces', sans-serif;
+    /* Primary */
+    --SoftRed: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --DarkDesaturatedCyan: hsl(167, 40%, 24%);
+    /*graphic design text*/
+    --DarkBlue: hsl(198, 62%, 26%);
+    /*photography text*/
+    --DarkModerateCyan: hsl(168, 34%, 41%);
+    /*footer*/
+
+    /* neutral */
+    --VeryDarkDesaturatedBlue: hsl(212, 27%, 19%); 
+    --VeryDarkGrayishBlue: hsl(213, 9%, 39%); 
+    --DarkGrayishBlue: hsl(232, 10%, 55%); 
+    --GrayishBlue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.8rem;
+}
+/*Header*/
+header{
+  background-image: url(images/mobile/image-header.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 20px 20px;
+}
+a{
+    text-decoration: none;
+}
+/* menu */
+#box-togge{
+    display: none;
+}
+li.options{
+   
+}
+#div-button{
+  display: none;
+}
+#contact-button{
+
+}
+/* hanburger menu */
+#logo-svg{
+  width: 15rem;
+}
+#div-hunburger{
+ width: 35px;
+ height: 30px;
+}
+.hunburger-dvs{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  margin: 6px auto;
+}
+/* menu open */
+#div-hunburger-on{
+    width: 35px;
+    height: 30px;
+}
+.hunburger-dvs-on{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    margin: 6px auto;
+}
+#box-togge-on{
+    position: absolute;
+    display:block;
+    left: 21px;
+    top: 104px;
+    bottom: 28px;
+    right: 4px;
+    width: 88.5vw;
+    padding: 3rem;
+    height: 60vh;
+    background-color: var(--White);
+    font:400 2rem var(--font1);
+ 
+  
+}
+#menu-bar-on{
+    list-style-type: none;
+    text-align: center;
+    
+}
+#menu-bar-on > li{
+    padding: 1.5rem 0px;
+}
+#menu-bar-on  a {
+  color: var(--DarkGrayishBlue);
+}
+#div-button-on{
+text-align: center;
+margin: 40px 0px 0px 0px;
+
+}
+#div-button-on > button{
+  width: 55%;
+  padding: 6%;
+  border: none;
+  background-color: var(--Yellow);
+  font:900 1.5rem var(--font2);
+  box-shadow:0px 0px 4px 2px rgba(0, 0, 0, 0.127);
+  color: var(--VeryDarkDesaturatedBlue);
+  border-radius: 40px;
+}
+
+/* title */
+#div-main-title{
+ margin: auto;
+
+
+}
+#main-title{
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 10px 0px;
+  color: var(--White);
+  margin: 25% 0px 30px 0px;
+  font:900 4rem var(--font2);
+}
+#arrow-down{
+    display: block;
+    margin: auto;
+}
+/* main contents */
+
+section#about-us{
+
+}
+.about-us-info{
+
+}
+#trasform-brand{
+
+}
+#title-transform-brand{
+
+}
+#p-transform-brand{
+
+}
+#link-transform-brand{
+
+}
+/* image egg*/
+#egg-img-transform-brand{
+
+}
+#egg-img-transform-brand > img{
+
+}
+/* content below*/
+#stand-out{
+    
+}
+/*image cup */
+#cup-image-stand-out{
+
+}
+#cup-image-stand-out > img{
+
+}
+/* content */
+#content-stand-out{
+
+}
+#tilte-stand-out{
+
+}
+#p-stand-out{
+
+}
+#link-stand-out{
+
+}
+
+section#design-and-Photography{
+
+}
+/* design */
+div#Graphic-design{
+
+}
+#title-Graphic-design{
+
+}
+#p-Graphic-design{
+
+}
+/* photography */
+div#Photography{
+
+}
+#title-photography{
+
+}
+#p-Photography{
+
+}
+/* clients */
+section#Client-testimonials{
+
+}
+#title-Client-testimonials{
+
+}
+.clients{
+
+}
+.avatar-clients{
+
+}
+.paragraphs-client {
+
+}
+/* extra */
+.client-name{
+
+}
+.client-profession{
+
+}
+/* estra */
+#client-1{
+
+}
+#client-p-1{
+
+}
+#client-2{
+
+}
+#client-p-2{
+
+}
+#client-3{
+
+}
+#client-p-3{
+
+}
+
+section#img-galery{
+
+}
+.images-galery{
+
+}
+
+footer{
+
+}
+#company-name{
+
+}
+.nav-links-footer{
+
+}
+#social-networks{
+
+}
+#social-links{
+
+}
+
+#copy{
+    
+}
+
+
+@media screen and (min-width:375px){
+/* button contact */
+#div-button{
+
+}
+#contact-button{
+   
+}
+
+}
+
