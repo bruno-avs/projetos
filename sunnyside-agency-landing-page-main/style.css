@@ -375,7 +375,22 @@ footer{
     text-align: center;
     padding: 20px;
 }
+/* ---------height smartphones */
+@media screen and (max-height:450px){
+  div#Photography{
+  height: 450px;
+  }
+}
+@media screen and (max-height:450px){
+  div#Graphic-design{
+  height: 450px;
+  }
+}
+
 @media screen and (min-width:400px){
+  html{
+    font-size: 70%;
+  }
   header{
     background-position: center;
   }
@@ -384,6 +399,16 @@ footer{
   }
   div#Graphic-design{
     background-position: center;
+  }
+  @media screen and (max-height:600px){
+    div#Photography{
+    height: 600px;
+    }
+  }
+  @media screen and (max-height:500px){
+    div#Graphic-design{
+    height: 500px;
+    }
   }
 }
 /* images */
@@ -522,11 +547,13 @@ section.desktop-meu{
   display: none;
 }
 .div-button-desktop{
+  cursor: pointer;
   display: block;
   width: 1rem;
   margin:0px 0px 0px 2rem;
 }
 .div-button-desktop > button{
+  cursor: pointer;
   border: none;
   width: 150px;
   padding: 1.2rem;
@@ -537,8 +564,15 @@ section.desktop-meu{
   color: var(--VeryDarkDesaturatedBlue);
   border-radius: 30px;
 }
+.div-button-desktop > button:hover{
+  background-color: rgba(255, 255, 255, 0.193);
+  color: var(--White);
+}
 .link-about-us{
   top:-1.5rem;
+}
+.efect-link :hover{
+  cursor: pointer;
 }
 #trasform-brand{
   display: flex;
@@ -585,10 +619,11 @@ padding: 5px;
 /* ------------------------------ */
 section#design-and-Photography{
   display: flex;
+  height: 700px;
 }
 div#Graphic-design{
   width:50%;
-  height:70vh;
+  height: auto;
   margin-top: 0;
 }
 #title-Graphic-design{
@@ -606,7 +641,7 @@ div#Graphic-design{
 /* photography */
 div#Photography{
  width:50%;
- height:70vh;
+ height: auto;
 }
 #title-photography{
  font: 900 2rem var(--font2);
@@ -634,14 +669,29 @@ div#Photography{
   .client-profession{
     font:400 1rem var(--font1);
   }
+  /* ------------------footer------------ */
+  .nav-links-footer:hover{
+    color: var(--White);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.383);
+  }
 }
 @media screen and (min-width:900px){
+  section#Client-testimonials{
+    padding: 0px 0px 5rem 0px;
+  }
 #clients{
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.clients{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
 }
     #title-Client-testimonials{
-      color: var(--GrayishBlue);
       font: 900 1.4rem var(--font2);
       letter-spacing: 0.5rem;
       padding: 10px;
@@ -653,9 +703,8 @@ div#Photography{
       padding: 3rem 0rem;
     }
     .paragraphs-client {
-      color: var(--VeryDarkGrayishBlue);
-      font:400 1.6rem var(--font1);
-      line-height: 2.5rem;
+      font:400 1.2rem var(--font1);
+      line-height: 1.8rem;
       margin-bottom: 2.2rem;
     }
     /* extra */
@@ -668,57 +717,138 @@ div#Photography{
       padding:1rem 1rem 3rem 1rem;
     }
     #client-3-jennie{
-      padding-bottom: 6.5rem;
+      padding-bottom: 3rem;
+    }
+    #title-photography {
+      font: 900 2.4rem var(--font2);
+      padding-bottom: 2rem;
+    }
+    #p-Photography{
+      font: 400 1.6rem var(--font1);
+      padding: 0px 0px 3rem 0px;
+    }
+    #title-Graphic-design{
+      font: 900 2.4rem var(--font2);
+      padding-bottom: 2rem;
+    }
+    #p-Graphic-design{
+      font: 400 1.6rem var(--font1);
+      padding: 0px 0px 1.9rem 0px;
     }
 }
 @media screen and (min-width:1025px){
   html{
-    font-size: 85%;
+    font-size: 80%;
+  }
+  #main-title{
+    margin: 5% 0px 30px 0px;
+  }
+  nav{
+    padding: 17px 30px 20px 30px;
+  }
+  #logo-svg{
+    width: 10rem;
+  }
+  .options > a{
+    font:400 1.2rem var(--font1);
+  }
+  .div-button-desktop > button{
+    font:900 1.1rem var(--font2);
+    border-radius: 40px;
   }
   .options{
     padding: 0px 2rem 0px 2rem;
   }
-  .efect-link{
-    margin: 26px 0px 0px 0px ;
-    position: relative;
-    height: 5px;
-    padding: 4px;
-    width: 36%;
-    max-width: 12.1rem;
-    border-radius: 5px;
-  }
-  .link-about-us{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top:-1.25rem;
-    bottom: 0;
-  }
   #content-trasform-brand{
-    order: 0;
-    background-color: var(--White);
-    width: 50vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 5rem 2rem 4rem 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    padding: 5rem 4rem 4rem 4rem;
   }
   #title-transform-brand{
    font: 900 2.8rem var(--font2);
-   color: var(--VeryDarkDesaturatedBlue);
    padding-bottom: 1rem;
   }
   #p-transform-brand{
-    width: 100%;
-    padding: 0px 1rem;
-    color:var(--VeryDarkGrayishBlue);
-    font:400 1.6rem var(--font1);
-    line-height: 2.3rem;
-    padding-bottom: 2.4rem;
+    padding: 0px 1rem 0px 0px;
   }
+  #content-stand-out{
+    align-items: flex-start;
+    text-align: left;
+    margin: auto;
+    padding: 4rem 4rem 4rem 4rem;
+   }
+   #p-stand-out{
+     padding: 0px 1.9rem 0px 0px ;
+   }
+    /* -------------------------------------- */
+   div#Graphic-design{
+    width:100%;
+    height: 50rem;
+    padding: 2rem 6rem 1rem 6rem;
+    margin-top: 0px;
+ }
+ #title-Graphic-design{
+   font: 900 2.5rem var(--font2);
+   padding-bottom: 2rem;
+ }
+ #p-Graphic-design{
+   font:400 1.6rem var(--font1);
+   padding-bottom: 4rem;
+   margin-bottom: 4.5rem;
+   padding: 0px 0px 0px 0px ;
+ }
+ /* photography */
+ div#Photography{
+   width: 100%;
+   height:50rem;
+   padding: 2rem 6rem 1rem 6rem;
+ }
+ #title-photography{
+   font: 900 2.5rem var(--font2);
+   padding-bottom: 2rem;
+ }
+ #p-Photography{
+   font:400 1.7rem var(--font1);
+   padding-bottom: 4rem;
+   margin-bottom: 4.5rem;
+   padding: 0px 0px 0px 0px ;
+ }
+ section#Client-testimonials{
+  padding: 0px 0px 6rem 0px;
+  margin-top: -30px;
+}
 
+}
+@media screen and (min-width:1200px){
+  #content-trasform-brand{
+    padding:4rem 4rem 4rem 8rem;
+  }
+  #title-transform-brand{
+   font: 900 3.2rem var(--font2);
+   padding-bottom: 2rem;
+  }
+  #p-transform-brand{
+    padding: 0px 1rem 2rem 0px;
+  }
+  #content-stand-out{
+    padding:4rem 4rem 4rem 8rem;
+   }
+   title-stand-out{
+    font: 900 3.2rem var(--font2);
+    padding-bottom: 2rem;
+   }
+   #p-stand-out{
+    padding: 0px 1rem 2rem 0px;
+   }
+   .avatar-clients{
+    width: 15%;
+  }
+  .paragraphs-client {
+    font:400 1.5rem var(--font1);
+    line-height: 2rem;
+    margin: 0px 2rem 2.2rem 2rem;
+  }
 }
 
