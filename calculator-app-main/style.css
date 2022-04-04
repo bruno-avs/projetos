@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+:root {
+    /* background */
+    /*very Dark Desaturated Blue */
+    --screenBackground-1: hsl(224, 36%, 15%);
+    /*very Dark Desaturated Blue*/
+    --mainBackground-1: hsl(222, 26%, 31%);
+    /*very Dark Desaturated Blue*/
+    --toggleBackground-keypadBackground-1: hsl(223, 31%, 20%);
+
+    /* keys */
+    --keyBackground-1: hsl(225, 21%, 49%);
+    /**/
+    --keyShadow-1: hsl(224, 28%, 35%);
+    /**/
+
+    --red-1: hsl(6, 63%, 50%);
+    /*key background, toggle*/
+    --dark-1: hsl(6, 70%, 34%);
+    /*key shadow*/
+
+    /* --keyBackground-1: hsl(30, 25%, 89%);
+    --keyShadow-1: hsl(28, 16%, 65%); */
+    /* text */
+    /* --VeryDarkGrayishBlue-1: hsl(221, 14%, 31%);
+    --White-1: hsl(0, 0, 100%); */
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--mainBackground-1);
+    font-size: 1.6rem;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+
+}
+
+.c-calculator-area {
+    margin: 10vh auto 5vh auto;
+    width: 50rem;
+    height: 55rem;
+}
+
+/* ------------------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    color: white;
+}
+
+.c-header__logo {
+    font-size: 1.8rem;
+}
+
+/* ----------------- */
+nav {
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+.c-nav__divs {
+    padding: 0px 0px 0px 10px;
+    font-size: 1.3rem;
+}
+
+.c-nav__treme-area {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.c-nav__treme-area>div {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input[type=range]::-webkit-textfield-decoration-container {
+    background-color: rgb(235, 255, 248);
+    border-radius: 50%;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 80%;
+    color: rgb(0, 238, 238);
+    height: 1.6rem;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    background-color: hsla(223, 31%, 20%, 0.572);
+}
+
+/* -------------------- */
+
+.c-result-area {
+    border-radius: 10px;
+    height: 80px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 20px;
+    background-color: var(--screenBackground-1);
+    color: white;
+    font-size: 3rem;
+    text-align: right;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 72%;
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+.c-operation-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.c-operation-area__lines {
+    display: flex;
+    justify-content: center;
+
+}
+
+.c-operation-area__buttons {
+    background-color: white;
+    font-size: 2rem;
+    width: 10rem;
+    height: 5.5rem;
+    box-shadow: 0px 5px var(--keyShadow-1);
+    padding: 5px;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-operation-area__buttons:hover {
+    transform: translateY(5px);
+    transition: all 200ms ease-in;
+    box-shadow: none;
+}
+
+.c-bass-area {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.c-bass-area__equal {
+    background-color: var(--red-1);
+    box-shadow: 0px 4px rgba(249, 42, 42, 0.566);
+}
+
+.u-cleaner--buttons {
+    color: white;
+    background-color: var(--keyBackground-1);
+    box-shadow: 0px 4px var(--keyShadow-1);
+}
+
+.c-bass-area__buttons {
+    color: white;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: none;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.c-bass-area__buttons:hover {
+    transform: translateY(5px);
+    transition: all 200ms ease-in;
+    box-shadow: none;
+}
+
+
+
+

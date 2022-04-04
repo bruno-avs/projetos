@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/treme3.css">
+  <link rel="stylesheet" href="./style/treme2.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <section class="c-calculator-area js-calculator-area">
+    <header>
+      <div class="c-header__logo">
+        calc
+      </div>
+      <nav>
+        <div class="c-nav__divs">
+          THEME
+        </div>
+        <div class="c-nav__divs c-nav__treme-area">
+          <div>1 | 2 | 3</div>
+          <input type="range" value="1" name="treme-button" class="c-nav__treme-button js-nav__treme-button">
+        </div>
+      </nav>
+    </header>
+    <div class="c-result-area js-result-area">
+
+    </div>
+    <main class="js-main-operators">
+      <section class="c-operation-area">
+        <div class="c-operation-area__lines">
+          <div class="c-operation-area__buttons js-operators" value="7">7</div>
+          <div class="c-operation-area__buttons js-operators" value="8">8</div>
+          <div class="c-operation-area__buttons js-operators" value="9">9</div>
+          <div class="c-operation-area__buttons u-cleaner--buttons js-operators" value="del">DEL</div>
+        </div>
+        <div class="c-operation-area__lines">
+          <div class="c-operation-area__buttons js-operators" value="4">4</div>
+          <div class="c-operation-area__buttons js-operators" value="5">5</div>
+          <div class="c-operation-area__buttons js-operators" value="6">6</div>
+          <div class="c-operation-area__buttons u-operators--design js-operators" value="+">+</div>
+        </div>
+        <div class="c-operation-area__lines">
+          <div class="c-operation-area__buttons js-operators" value="1">1</div>
+          <div class="c-operation-area__buttons js-operators" value="2">2</div>
+          <div class="c-operation-area__buttons js-operators" value="3">3</div>
+          <div class="c-operation-area__buttons js-operators" value="-">-</div>
+        </div>         
+        <div class="c-operation-area__lines">
+          <div class="c-operation-area__buttons js-operators" value=".">.</div>
+          <div class="c-operation-area__buttons js-operators" value="0">0</div>
+          <div class="c-operation-area__buttons js-operators" value="/">/</div>
+          <div class="c-operation-area__buttons js-operators" value="*">x</div>
+        </div>
+      </section>
+      <section class="c-bass-area">
+        <div class="c-bass-area__buttons u-cleaner--buttons js-operators" value="reset">RESET</div>
+        <div class="c-bass-area__buttons c-bass-area__equal js-operators" value="=">=</div>
+      </section>
+    </main>
+  </section>
+  <script src="treme.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
