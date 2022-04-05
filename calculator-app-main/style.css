@@ -104,6 +104,7 @@ input[type=range] {
     margin: auto;
     border-radius: 20px;
     background-color: hsla(223, 31%, 20%, 0.572);
+    cursor:pointer;
 }
 
 /* -------------------- */
@@ -143,6 +144,7 @@ main {
 }
 
 .c-operation-area__buttons {
+    cursor:pointer;
     background-color: white;
     font-size: 2rem;
     width: 10rem;
