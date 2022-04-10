@@ -226,7 +226,7 @@
 }
 @media screen and (max-width:490px){
     body {
-        animation: is-moving-background 50s linear infinite alternate;
+        animation: none;
         background: var(--darck-blue) url(../../assets/home/background-home-mobile.jpg) no-repeat fixed;
         background-size: cover;
         height: 100vh;
