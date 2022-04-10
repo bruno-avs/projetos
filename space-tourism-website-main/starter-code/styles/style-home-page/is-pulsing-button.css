@@ -1,0 +1,6 @@
+.is-button:hover{   
+    transition-duration: 1s;
+  transform: scale(0.9);
+  
+  
+}

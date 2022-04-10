@@ -1,0 +1,5 @@
+@keyframes is-moving-background {
+    to{
+        background-position: right bottom;
+    }
+}
