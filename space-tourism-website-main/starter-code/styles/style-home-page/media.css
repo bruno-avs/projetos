@@ -21,7 +21,7 @@
         animation: is-moving-background 50s linear infinite alternate;
         background: var(--darck-blue) url(../../assets/home/background-home-tablet.jpg) no-repeat fixed;
         background-size: cover;
-        height: 100%;
+        height: 100vh;
         width: 100vw;
         overflow: hidden;
     }
