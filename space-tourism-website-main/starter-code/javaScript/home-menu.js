@@ -1,13 +1,10 @@
+let situetion = true;
 
 const $hanburgerMenu = document.querySelector('.c-header__hamburger-menu');
 
-let situetion = true;
-
-$hanburgerMenu.addEventListener('click', addMobalBar);
 function addMobalBar() {
     const $header = document.querySelector('.js-header');
     const $main = document.querySelector('main');
-    const $nav = document.querySelector('nav');
 
     if (situetion) {
         const humburgerSVG =
@@ -31,3 +28,4 @@ function addMobalBar() {
     $header.classList.toggle('is-active', situetion);
     situetion = !situetion;
 }
+$hanburgerMenu.addEventListener('click', addMobalBar);
