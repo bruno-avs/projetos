@@ -227,9 +227,9 @@
 @media screen and (max-width:490px){
     body {
         animation: none;
-        background: var(--darck-blue) url(../../assets/home/background-home-mobile.jpg) no-repeat fixed;
+        background: var(--darck-blue) url(../../assets/home/background-home-mobile.jpg) no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 110vh;
         width: 100vw;
     }
 .c-main__content-space {
