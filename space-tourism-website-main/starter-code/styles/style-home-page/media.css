@@ -19,9 +19,9 @@
 
     body {
         animation: is-moving-background 50s linear infinite alternate;
-        background: var(--darck-blue) url(../../assets/home/background-home-tablet.jpg) no-repeat;
+        background: var(--darck-blue) url(../../assets/home/background-home-tablet.jpg) no-repeat fixed;
         background-size: cover;
-        height: 100vh;
+        height: 100%;
         width: 100vw;
     }
 
