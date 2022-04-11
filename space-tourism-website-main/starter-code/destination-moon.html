@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="styles/style-destination/style-destination.css">
+  <title>Destination</title>
 </head>
 <body>
-
+  <header class="js-header has-come-up">
+    <div class="c-header__div-logo">
+      <img src="./assets/shared/logo.svg" alt="star logo svg" class="c-header__svg-logo">
+    </div>
+    <div class="c-header__horizontal-line">
+    </div>
+    <nav>
+      <ul class="c-nav__list">
+        <li><a href="./index.html" class="c-nav__links link1"><strong>00</strong> Home</a>
+          <div class="c-nav_underline-home"></div>
+        </li>
+        <li><a href="./" class="c-nav__links"><strong>01</strong> Destination</a>
+          <div class="c-nav_underline-Destination"></div>
+        </li>
+        <li><a href="" class="c-nav__links"><strong>02</strong> Crew</a>
+          <div class="c-nav_underline-Crew"></div>
+        </li>
+        <li><a href="" class="c-nav__links"><strong>03</strong> Technology</a>
+          <div class="c-nav_underline-Technology"></div>
+        </li>
+      </ul>
+    </nav>
+    <div class="c-header__hamburger-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30">
+        <g fill="#D0D6F9" fill-rule="evenodd">
+          <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+        </g>
+      </svg>
+    </div>
+  </header>
   00 Home
   01 Destination
   02 Crew
@@ -24,8 +54,8 @@
 
   Moon
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
+  See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+  regain perspective and come back refreshed. While you’re there, take in some history
   by visiting the Luna 2 and Apollo 11 landing sites.
 
   Avg. distance
@@ -33,5 +63,7 @@
 
   Est. travel time
   3 days
+  <script src="./javaScript/home-menu.js"></script>
 </body>
+
 </html>
